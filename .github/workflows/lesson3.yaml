@@ -1,11 +1,11 @@
-name: learn-github-actions 
-on: [push] 
-env: 
-  env_1 : yana 
+name: learn-github-actions
+on: [push]
+env:
+  env_1 : hashito
 jobs:
   check-bats-version:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run:
-        echo "this is env=${{ env.env_1 }}"
+      - run: |
+          echo "ths is env=${{ env.env_1 }}"
